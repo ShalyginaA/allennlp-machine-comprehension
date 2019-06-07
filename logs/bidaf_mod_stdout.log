@@ -1,0 +1,2196 @@
+2019-06-06 13:48:19,574 - INFO - allennlp.common.params - random_seed = 13370
+2019-06-06 13:48:19,574 - INFO - allennlp.common.params - numpy_seed = 1337
+2019-06-06 13:48:19,575 - INFO - allennlp.common.params - pytorch_seed = 133
+2019-06-06 13:48:23,866 - INFO - allennlp.common.checks - Pytorch version: 1.1.0
+2019-06-06 13:48:23,870 - INFO - allennlp.common.params - evaluate_on_test = False
+2019-06-06 13:48:23,870 - INFO - allennlp.common.params - validation_dataset_reader = None
+2019-06-06 13:48:23,870 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.dataset_readers.dataset_reader.DatasetReader'> from params {'token_indexers': {'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260, 0, 0, 0, 0, 0], 'start_tokens': [259]}, 'type': 'characters'}, 'tokens': {'lowercase_tokens': True, 'type': 'single_id'}}, 'type': 'squad'} and extras set()
+2019-06-06 13:48:23,871 - INFO - allennlp.common.params - dataset_reader.type = squad
+2019-06-06 13:48:23,871 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.dataset_readers.reading_comprehension.squad.SquadReader'> from params {'token_indexers': {'token_characters': {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260, 0, 0, 0, 0, 0], 'start_tokens': [259]}, 'type': 'characters'}, 'tokens': {'lowercase_tokens': True, 'type': 'single_id'}}} and extras set()
+2019-06-06 13:48:23,872 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_indexer.TokenIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260, 0, 0, 0, 0, 0], 'start_tokens': [259]}, 'type': 'characters'} and extras set()
+2019-06-06 13:48:23,872 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.type = characters
+2019-06-06 13:48:23,872 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_characters_indexer.TokenCharactersIndexer from params {'character_tokenizer': {'byte_encoding': 'utf-8', 'end_tokens': [260, 0, 0, 0, 0, 0], 'start_tokens': [259]}} and extras set()
+2019-06-06 13:48:23,872 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.namespace = token_characters
+2019-06-06 13:48:23,873 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.tokenizers.character_tokenizer.CharacterTokenizer'> from params {'byte_encoding': 'utf-8', 'end_tokens': [260, 0, 0, 0, 0, 0], 'start_tokens': [259]} and extras set()
+2019-06-06 13:48:23,873 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.byte_encoding = utf-8
+2019-06-06 13:48:23,873 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.lowercase_characters = False
+2019-06-06 13:48:23,873 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.start_tokens = [259]
+2019-06-06 13:48:23,873 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.character_tokenizer.end_tokens = [260, 0, 0, 0, 0, 0]
+2019-06-06 13:48:23,874 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.start_tokens = None
+2019-06-06 13:48:23,874 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.end_tokens = None
+2019-06-06 13:48:23,874 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.min_padding_length = 0
+2019-06-06 13:48:23,881 - INFO - allennlp.common.params - dataset_reader.token_indexers.token_characters.token_min_padding_length = 0
+2019-06-06 13:48:23,883 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.token_indexer.TokenIndexer from params {'lowercase_tokens': True, 'type': 'single_id'} and extras set()
+2019-06-06 13:48:23,883 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.type = single_id
+2019-06-06 13:48:23,887 - INFO - allennlp.common.from_params - instantiating class allennlp.data.token_indexers.single_id_token_indexer.SingleIdTokenIndexer from params {'lowercase_tokens': True} and extras set()
+2019-06-06 13:48:23,888 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.namespace = tokens
+2019-06-06 13:48:23,888 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.lowercase_tokens = True
+2019-06-06 13:48:23,888 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.start_tokens = None
+2019-06-06 13:48:23,888 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.end_tokens = None
+2019-06-06 13:48:23,888 - INFO - allennlp.common.params - dataset_reader.token_indexers.tokens.token_min_padding_length = 0
+2019-06-06 13:48:23,889 - INFO - allennlp.common.params - dataset_reader.lazy = False
+2019-06-06 13:48:23,889 - INFO - allennlp.common.params - dataset_reader.passage_length_limit = None
+2019-06-06 13:48:23,889 - INFO - allennlp.common.params - dataset_reader.question_length_limit = None
+2019-06-06 13:48:23,889 - INFO - allennlp.common.params - dataset_reader.skip_invalid_examples = False
+2019-06-06 13:48:24,160 - INFO - allennlp.common.params - train_data_path = squad/train-v1.1.json
+2019-06-06 13:48:24,160 - INFO - allennlp.training.util - Reading training data from squad/train-v1.1.json
+2019-06-06 13:48:24,167 - INFO - allennlp.data.dataset_readers.reading_comprehension.squad - Reading file at squad/train-v1.1.json
+2019-06-06 13:48:24,696 - INFO - allennlp.data.dataset_readers.reading_comprehension.squad - Reading the dataset
+2019-06-06 13:49:50,747 - INFO - allennlp.common.params - validation_data_path = squad/dev-v1.1.json
+2019-06-06 13:49:50,748 - INFO - allennlp.training.util - Reading validation data from squad/dev-v1.1.json
+2019-06-06 13:49:50,751 - INFO - allennlp.data.dataset_readers.reading_comprehension.squad - Reading file at squad/dev-v1.1.json
+2019-06-06 13:49:50,802 - INFO - allennlp.data.dataset_readers.reading_comprehension.squad - Reading the dataset
+2019-06-06 13:50:03,538 - INFO - allennlp.common.params - test_data_path = None
+2019-06-06 13:50:03,739 - INFO - allennlp.training.trainer - From dataset instances, train, validation will be considered for vocabulary creation.
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.type = None
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.extend = False
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.directory_path = None
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.min_count = None
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.max_vocab_size = None
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.non_padded_namespaces = ('*tags', '*labels')
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.min_pretrained_embeddings = None
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.only_include_pretrained_words = False
+2019-06-06 13:50:03,740 - INFO - allennlp.common.params - vocabulary.tokens_to_add = None
+2019-06-06 13:50:03,740 - INFO - allennlp.data.vocabulary - Fitting token dictionary from dataset.
+2019-06-06 13:53:17,253 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.models.model.Model'> from params {'dropout': 0.2, 'modeling_layer': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 800, 'num_layers': 2, 'type': 'lstm'}, 'num_highway_layers': 2, 'phrase_layer': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 200, 'num_layers': 1, 'type': 'lstm'}, 'span_end_encoder': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 1400, 'num_layers': 1, 'type': 'lstm'}, 'text_field_embedder': {'token_characters': {'dropout': 0.2, 'embedding': {'embedding_dim': 16, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}, 'tokens': {'embedding_dim': 100, 'pretrained_file': 'glove/glove.6B.100d.txt', 'trainable': False, 'type': 'embedding'}}, 'type': 'bidaf-modified'} and extras {'vocab'}
+2019-06-06 13:53:17,257 - INFO - allennlp.common.params - model.type = bidaf-modified
+2019-06-06 13:53:17,259 - INFO - allennlp.common.from_params - instantiating class <class 'bidaf_modified.BidirectionalAttentionFlow'> from params {'dropout': 0.2, 'modeling_layer': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 800, 'num_layers': 2, 'type': 'lstm'}, 'num_highway_layers': 2, 'phrase_layer': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 200, 'num_layers': 1, 'type': 'lstm'}, 'span_end_encoder': {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 1400, 'num_layers': 1, 'type': 'lstm'}, 'text_field_embedder': {'token_characters': {'dropout': 0.2, 'embedding': {'embedding_dim': 16, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}, 'tokens': {'embedding_dim': 100, 'pretrained_file': 'glove/glove.6B.100d.txt', 'trainable': False, 'type': 'embedding'}}} and extras {'vocab'}
+2019-06-06 13:53:17,261 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.text_field_embedders.text_field_embedder.TextFieldEmbedder'> from params {'token_characters': {'dropout': 0.2, 'embedding': {'embedding_dim': 16, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'}, 'tokens': {'embedding_dim': 100, 'pretrained_file': 'glove/glove.6B.100d.txt', 'trainable': False, 'type': 'embedding'}} and extras {'vocab'}
+2019-06-06 13:53:17,262 - INFO - allennlp.common.params - model.text_field_embedder.type = basic
+2019-06-06 13:53:17,264 - INFO - allennlp.common.params - model.text_field_embedder.embedder_to_indexer_map = None
+2019-06-06 13:53:17,265 - INFO - allennlp.common.params - model.text_field_embedder.allow_unmatched_keys = False
+2019-06-06 13:53:17,266 - INFO - allennlp.common.params - model.text_field_embedder.token_embedders = None
+2019-06-06 13:53:17,270 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.token_embedders.token_embedder.TokenEmbedder'> from params {'dropout': 0.2, 'embedding': {'embedding_dim': 16, 'num_embeddings': 262}, 'encoder': {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'}, 'type': 'character_encoding'} and extras {'vocab'}
+2019-06-06 13:53:17,271 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.type = character_encoding
+2019-06-06 13:53:17,272 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.num_embeddings = 262
+2019-06-06 13:53:17,274 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.vocab_namespace = None
+2019-06-06 13:53:17,275 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.embedding_dim = 16
+2019-06-06 13:53:17,276 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.pretrained_file = None
+2019-06-06 13:53:17,276 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.projection_dim = None
+2019-06-06 13:53:17,277 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.trainable = True
+2019-06-06 13:53:17,278 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.padding_index = None
+2019-06-06 13:53:17,279 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.max_norm = None
+2019-06-06 13:53:17,280 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.norm_type = 2.0
+2019-06-06 13:53:17,281 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.scale_grad_by_freq = False
+2019-06-06 13:53:17,282 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.embedding.sparse = False
+2019-06-06 13:53:17,287 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2vec_encoders.seq2vec_encoder.Seq2VecEncoder'> from params {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100, 'type': 'cnn'} and extras set()
+2019-06-06 13:53:17,288 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.encoder.type = cnn
+2019-06-06 13:53:17,289 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2vec_encoders.cnn_encoder.CnnEncoder'> from params {'embedding_dim': 16, 'ngram_filter_sizes': [5], 'num_filters': 100} and extras set()
+2019-06-06 13:53:17,289 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.encoder.embedding_dim = 16
+2019-06-06 13:53:17,290 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.encoder.num_filters = 100
+2019-06-06 13:53:17,290 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.encoder.ngram_filter_sizes = [5]
+2019-06-06 13:53:17,291 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.encoder.output_dim = None
+2019-06-06 13:53:17,303 - INFO - allennlp.common.params - model.text_field_embedder.token_characters.dropout = 0.2
+2019-06-06 13:53:17,304 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.token_embedders.token_embedder.TokenEmbedder'> from params {'embedding_dim': 100, 'pretrained_file': 'glove/glove.6B.100d.txt', 'trainable': False, 'type': 'embedding'} and extras {'vocab'}
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.type = embedding
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.num_embeddings = None
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.vocab_namespace = tokens
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.embedding_dim = 100
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.pretrained_file = glove/glove.6B.100d.txt
+2019-06-06 13:53:17,304 - INFO - allennlp.common.params - model.text_field_embedder.tokens.projection_dim = None
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.trainable = False
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.padding_index = None
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.max_norm = None
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.norm_type = 2.0
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.scale_grad_by_freq = False
+2019-06-06 13:53:17,305 - INFO - allennlp.common.params - model.text_field_embedder.tokens.sparse = False
+2019-06-06 13:53:17,314 - INFO - allennlp.modules.token_embedders.embedding - Reading pretrained embeddings from file
+2019-06-06 13:53:21,108 - INFO - allennlp.modules.token_embedders.embedding - Initializing pre-trained embedding layer
+2019-06-06 13:53:22,135 - INFO - allennlp.modules.token_embedders.embedding - Pretrained embeddings were found for 73164 out of 97374 tokens
+2019-06-06 13:53:22,157 - INFO - allennlp.common.params - model.num_highway_layers = 2
+2019-06-06 13:53:22,158 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder'> from params {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 200, 'num_layers': 1, 'type': 'lstm'} and extras {'vocab'}
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - model.phrase_layer.type = lstm
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - model.phrase_layer.batch_first = True
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - model.phrase_layer.stateful = False
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - model.phrase_layer.bidirectional = True
+2019-06-06 13:53:22,158 - INFO - allennlp.common.params - model.phrase_layer.dropout = 0.2
+2019-06-06 13:53:22,159 - INFO - allennlp.common.params - model.phrase_layer.hidden_size = 100
+2019-06-06 13:53:22,159 - INFO - allennlp.common.params - model.phrase_layer.input_size = 200
+2019-06-06 13:53:22,159 - INFO - allennlp.common.params - model.phrase_layer.num_layers = 1
+2019-06-06 13:53:22,159 - INFO - allennlp.common.params - model.phrase_layer.batch_first = True
+2019-06-06 13:53:22,170 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder'> from params {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 800, 'num_layers': 2, 'type': 'lstm'} and extras {'vocab'}
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - model.modeling_layer.type = lstm
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - model.modeling_layer.batch_first = True
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - model.modeling_layer.stateful = False
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - model.modeling_layer.bidirectional = True
+2019-06-06 13:53:22,170 - INFO - allennlp.common.params - model.modeling_layer.dropout = 0.2
+2019-06-06 13:53:22,171 - INFO - allennlp.common.params - model.modeling_layer.hidden_size = 100
+2019-06-06 13:53:22,171 - INFO - allennlp.common.params - model.modeling_layer.input_size = 800
+2019-06-06 13:53:22,171 - INFO - allennlp.common.params - model.modeling_layer.num_layers = 2
+2019-06-06 13:53:22,171 - INFO - allennlp.common.params - model.modeling_layer.batch_first = True
+2019-06-06 13:53:22,180 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.modules.seq2seq_encoders.seq2seq_encoder.Seq2SeqEncoder'> from params {'bidirectional': True, 'dropout': 0.2, 'hidden_size': 100, 'input_size': 1400, 'num_layers': 1, 'type': 'lstm'} and extras {'vocab'}
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.type = lstm
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.batch_first = True
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.stateful = False
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.bidirectional = True
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.dropout = 0.2
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.hidden_size = 100
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.input_size = 1400
+2019-06-06 13:53:22,180 - INFO - allennlp.common.params - model.span_end_encoder.num_layers = 1
+2019-06-06 13:53:22,181 - INFO - allennlp.common.params - model.span_end_encoder.batch_first = True
+2019-06-06 13:53:22,191 - INFO - allennlp.common.params - model.dropout = 0.2
+2019-06-06 13:53:22,191 - INFO - allennlp.common.params - model.mask_lstms = True
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers - Initializing parameters
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers - Done initializing parameters; the following parameters are using their default initialization from their code
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers -    _highway_layer._module._layers.0.bias
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers -    _highway_layer._module._layers.0.weight
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers -    _highway_layer._module._layers.1.bias
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers -    _highway_layer._module._layers.1.weight
+2019-06-06 13:53:22,195 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_hh_l0
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_hh_l1
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_hh_l1_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_ih_l0
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_ih_l1
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.bias_ih_l1_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_hh_l0
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_hh_l1
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_hh_l1_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_ih_l0
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,196 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_ih_l1
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _modeling_layer._module.weight_ih_l1_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.bias_hh_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.bias_ih_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.weight_hh_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.weight_ih_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _phrase_layer._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.bias_hh_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.bias_ih_l0
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,197 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.weight_hh_l0
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.weight_ih_l0
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_end_encoder._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_end_predictor._module.bias
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_end_predictor._module.weight
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_start_predictor._module.bias
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _span_start_predictor._module.weight
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _text_field_embedder.token_embedder_token_characters._embedding._module.weight
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _text_field_embedder.token_embedder_token_characters._encoder._module.conv_layer_0.bias
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _text_field_embedder.token_embedder_token_characters._encoder._module.conv_layer_0.weight
+2019-06-06 13:53:22,198 - INFO - allennlp.nn.initializers -    _text_field_embedder.token_embedder_tokens.weight
+2019-06-06 13:53:22,198 - INFO - root - Loading a model trained before embedding extension was implemented; pass an explicit vocab namespace if you want to extend the vocabulary.
+2019-06-06 13:53:22,459 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.iterators.data_iterator.DataIterator'> from params {'batch_size': 40, 'sorting_keys': [['passage', 'num_tokens'], ['question', 'num_tokens']], 'type': 'bucket'} and extras set()
+2019-06-06 13:53:22,459 - INFO - allennlp.common.params - iterator.type = bucket
+2019-06-06 13:53:22,459 - INFO - allennlp.common.from_params - instantiating class <class 'allennlp.data.iterators.bucket_iterator.BucketIterator'> from params {'batch_size': 40, 'sorting_keys': [['passage', 'num_tokens'], ['question', 'num_tokens']]} and extras set()
+2019-06-06 13:53:22,460 - INFO - allennlp.common.params - iterator.sorting_keys = [['passage', 'num_tokens'], ['question', 'num_tokens']]
+2019-06-06 13:53:22,460 - INFO - allennlp.common.params - iterator.padding_noise = 0.1
+2019-06-06 13:53:22,460 - INFO - allennlp.common.params - iterator.biggest_batch_first = False
+2019-06-06 13:53:22,461 - INFO - allennlp.common.params - iterator.batch_size = 40
+2019-06-06 13:53:22,461 - INFO - allennlp.common.params - iterator.instances_per_epoch = None
+2019-06-06 13:53:22,461 - INFO - allennlp.common.params - iterator.max_instances_in_memory = None
+2019-06-06 13:53:22,461 - INFO - allennlp.common.params - iterator.cache_instances = False
+2019-06-06 13:53:22,461 - INFO - allennlp.common.params - iterator.track_epoch = False
+2019-06-06 13:53:22,462 - INFO - allennlp.common.params - iterator.maximum_samples_per_batch = None
+2019-06-06 13:53:22,462 - INFO - allennlp.common.params - validation_iterator = None
+2019-06-06 13:53:22,462 - INFO - allennlp.common.params - trainer.no_grad = ()
+2019-06-06 13:53:22,462 - INFO - allennlp.training.trainer - Following parameters are Frozen  (without gradient):
+2019-06-06 13:53:22,463 - INFO - allennlp.training.trainer - _text_field_embedder.token_embedder_tokens.weight
+2019-06-06 13:53:22,463 - INFO - allennlp.training.trainer - Following parameters are Tunable (with gradient):
+2019-06-06 13:53:22,463 - INFO - allennlp.training.trainer - _text_field_embedder.token_embedder_token_characters._embedding._module.weight
+2019-06-06 13:53:22,463 - INFO - allennlp.training.trainer - _text_field_embedder.token_embedder_token_characters._encoder._module.conv_layer_0.weight
+2019-06-06 13:53:22,463 - INFO - allennlp.training.trainer - _text_field_embedder.token_embedder_token_characters._encoder._module.conv_layer_0.bias
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _highway_layer._module._layers.0.weight
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _highway_layer._module._layers.0.bias
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _highway_layer._module._layers.1.weight
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _highway_layer._module._layers.1.bias
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.weight_ih_l0
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.weight_hh_l0
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.bias_ih_l0
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.bias_hh_l0
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _phrase_layer._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_ih_l0
+2019-06-06 13:53:22,464 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_hh_l0
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_ih_l0
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_hh_l0
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,465 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_ih_l1
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_hh_l1
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_ih_l1
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_hh_l1
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_ih_l1_reverse
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.weight_hh_l1_reverse
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_ih_l1_reverse
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _modeling_layer._module.bias_hh_l1_reverse
+2019-06-06 13:53:22,466 - INFO - allennlp.training.trainer - _span_end_encoder._module.weight_ih_l0
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.weight_hh_l0
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.bias_ih_l0
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.bias_hh_l0
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.weight_ih_l0_reverse
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.weight_hh_l0_reverse
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.bias_ih_l0_reverse
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_encoder._module.bias_hh_l0_reverse
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_start_predictor._module.weight
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_start_predictor._module.bias
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_predictor._module.weight
+2019-06-06 13:53:22,467 - INFO - allennlp.training.trainer - _span_end_predictor._module.bias
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.patience = 10
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.validation_metric = +em
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.shuffle = True
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.num_epochs = 20
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.cuda_device = 0
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.grad_norm = 5
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.grad_clipping = None
+2019-06-06 13:53:22,468 - INFO - allennlp.common.params - trainer.momentum_scheduler = None
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - trainer.optimizer.type = adam
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - trainer.optimizer.parameter_groups = None
+2019-06-06 13:53:29,440 - INFO - allennlp.training.optimizers - Number of trainable parameters: 2581494
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - trainer.optimizer.infer_type_and_cast = True
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2019-06-06 13:53:29,440 - INFO - allennlp.common.params - trainer.optimizer.betas = [0.9, 0.9]
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.type = reduce_on_plateau
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - CURRENTLY DEFINED PARAMETERS: 
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.factor = 0.5
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.mode = max
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.learning_rate_scheduler.patience = 2
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.num_serialized_models_to_keep = 20
+2019-06-06 13:53:29,441 - INFO - allennlp.common.params - trainer.keep_serialized_model_every_num_seconds = None
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.model_save_interval = None
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.summary_interval = 100
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.histogram_interval = None
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.should_log_parameter_statistics = True
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.should_log_learning_rate = False
+2019-06-06 13:53:29,442 - INFO - allennlp.common.params - trainer.log_batch_size_period = None
+2019-06-06 13:53:29,448 - INFO - allennlp.training.trainer - Beginning training.
+2019-06-06 13:53:29,448 - INFO - allennlp.training.trainer - Epoch 0/19
+2019-06-06 13:53:29,448 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 5088.444
+2019-06-06 13:53:31,607 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 817
+2019-06-06 13:53:31,607 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 3057
+2019-06-06 13:53:31,607 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 10
+2019-06-06 13:53:31,607 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 13:53:31,608 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 13:53:31,608 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 13:53:31,608 - INFO - allennlp.training.trainer - Training
+2019-06-06 14:11:53,343 - INFO - allennlp.training.trainer - Validating
+2019-06-06 14:12:53,056 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 14:12:53,058 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.326  |     0.505
+2019-06-06 14:12:53,059 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.293  |     0.462
+2019-06-06 14:12:53,060 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  5088.444  |       N/A
+2019-06-06 14:12:53,060 - INFO - allennlp.training.tensorboard_writer - f1              |     0.358  |     0.592
+2019-06-06 14:12:53,060 - INFO - allennlp.training.tensorboard_writer - loss            |     5.487  |     3.788
+2019-06-06 14:12:53,061 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |    10.000  |       N/A
+2019-06-06 14:12:53,061 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.217  |     0.372
+2019-06-06 14:12:53,061 - INFO - allennlp.training.tensorboard_writer - em              |     0.242  |     0.466
+2019-06-06 14:12:53,062 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 14:12:53,062 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 14:12:53,062 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |   817.000  |       N/A
+2019-06-06 14:12:53,063 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 14:12:53,063 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |  3057.000  |       N/A
+2019-06-06 14:12:53,259 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'bidaf_mod_final/best.th'.
+2019-06-06 14:12:53,332 - INFO - allennlp.training.trainer - Epoch duration: 0:19:23.883949
+2019-06-06 14:12:53,338 - INFO - allennlp.training.trainer - Estimated training time remaining: 6:08:33
+2019-06-06 14:12:53,338 - INFO - allennlp.training.trainer - Epoch 1/19
+2019-06-06 14:12:53,338 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8365.308
+2019-06-06 14:12:56,170 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 14:12:56,171 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 3057
+2019-06-06 14:12:56,171 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 10
+2019-06-06 14:12:56,171 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 14:12:56,171 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 14:12:56,171 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 14:12:56,173 - INFO - allennlp.training.trainer - Training
+2019-06-06 14:27:08,111 - INFO - allennlp.training.trainer - Validating
+2019-06-06 14:27:38,478 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 14:27:38,480 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.535  |     0.578
+2019-06-06 14:27:38,481 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.485  |     0.542
+2019-06-06 14:27:38,481 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8365.308  |       N/A
+2019-06-06 14:27:38,482 - INFO - allennlp.training.tensorboard_writer - f1              |     0.583  |     0.666
+2019-06-06 14:27:38,482 - INFO - allennlp.training.tensorboard_writer - loss            |     3.606  |     3.190
+2019-06-06 14:27:38,482 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |    10.000  |       N/A
+2019-06-06 14:27:38,483 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.392  |     0.447
+2019-06-06 14:27:38,483 - INFO - allennlp.training.tensorboard_writer - em              |     0.437  |     0.548
+2019-06-06 14:27:38,484 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 14:27:38,484 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 14:27:38,484 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 14:27:38,484 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 14:27:38,485 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |  3057.000  |       N/A
+2019-06-06 14:27:38,643 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'bidaf_mod_final/best.th'.
+2019-06-06 14:27:38,765 - INFO - allennlp.training.trainer - Epoch duration: 0:14:45.426417
+2019-06-06 14:27:38,765 - INFO - allennlp.training.trainer - Estimated training time remaining: 5:07:23
+2019-06-06 14:27:38,765 - INFO - allennlp.training.trainer - Epoch 2/19
+2019-06-06 14:27:38,765 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8397.708
+2019-06-06 14:27:42,482 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 14:27:42,483 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 3057
+2019-06-06 14:27:42,483 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 10
+2019-06-06 14:27:42,483 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 14:27:42,483 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 14:27:42,483 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 14:27:42,485 - INFO - allennlp.training.trainer - Training
+2019-06-06 14:41:30,745 - INFO - allennlp.training.trainer - Validating
+2019-06-06 14:42:01,912 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 14:42:01,914 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.592  |     0.612
+2019-06-06 14:42:01,915 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.542  |     0.569
+2019-06-06 14:42:01,916 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8397.708  |       N/A
+2019-06-06 14:42:01,916 - INFO - allennlp.training.tensorboard_writer - f1              |     0.644  |     0.704
+2019-06-06 14:42:01,916 - INFO - allennlp.training.tensorboard_writer - loss            |     3.100  |     2.915
+2019-06-06 14:42:01,917 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |    10.000  |       N/A
+2019-06-06 14:42:01,917 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.447  |     0.478
+2019-06-06 14:42:01,918 - INFO - allennlp.training.tensorboard_writer - em              |     0.498  |     0.592
+2019-06-06 14:42:01,918 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 14:42:01,918 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 14:42:01,919 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 14:42:01,919 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 14:42:01,919 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |  3057.000  |       N/A
+2019-06-06 14:42:02,086 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'bidaf_mod_final/best.th'.
+2019-06-06 14:42:02,171 - INFO - allennlp.training.trainer - Epoch duration: 0:14:23.405970
+2019-06-06 14:42:02,171 - INFO - allennlp.training.trainer - Estimated training time remaining: 4:35:05
+2019-06-06 14:42:02,172 - INFO - allennlp.training.trainer - Epoch 3/19
+2019-06-06 14:42:02,172 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8401.144
+2019-06-06 14:42:05,081 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 14:42:05,082 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 3057
+2019-06-06 14:42:05,082 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 10
+2019-06-06 14:42:05,082 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 14:42:05,082 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 14:42:05,082 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 14:42:05,083 - INFO - allennlp.training.trainer - Training
+2019-06-06 14:55:58,233 - INFO - allennlp.training.trainer - Validating
+2019-06-06 14:56:29,411 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 14:56:29,413 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.629  |     0.629
+2019-06-06 14:56:29,414 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.579  |     0.590
+2019-06-06 14:56:29,415 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8401.144  |       N/A
+2019-06-06 14:56:29,415 - INFO - allennlp.training.tensorboard_writer - f1              |     0.682  |     0.721
+2019-06-06 14:56:29,416 - INFO - allennlp.training.tensorboard_writer - loss            |     2.785  |     2.759
+2019-06-06 14:56:29,416 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |    10.000  |       N/A
+2019-06-06 14:56:29,416 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.486  |     0.507
+2019-06-06 14:56:29,417 - INFO - allennlp.training.tensorboard_writer - em              |     0.539  |     0.621
+2019-06-06 14:56:29,417 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 14:56:29,417 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 14:56:29,417 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 14:56:29,418 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 14:56:29,418 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |  3057.000  |       N/A
+2019-06-06 14:56:29,593 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'bidaf_mod_final/best.th'.
+2019-06-06 14:56:29,670 - INFO - allennlp.training.trainer - Epoch duration: 0:14:27.497963
+2019-06-06 14:56:29,670 - INFO - allennlp.training.trainer - Estimated training time remaining: 4:12:00
+2019-06-06 14:56:29,670 - INFO - allennlp.training.trainer - Epoch 4/19
+2019-06-06 14:56:29,670 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8401.144
+2019-06-06 14:56:32,157 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 14:56:32,157 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 10
+2019-06-06 14:56:32,157 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 10
+2019-06-06 14:56:32,157 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 14:56:32,157 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 14:56:32,158 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 14:56:32,158 - INFO - allennlp.training.trainer - Training
+2019-06-06 15:10:22,298 - INFO - allennlp.training.trainer - Validating
+2019-06-06 15:10:50,828 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 15:10:50,830 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.659  |     0.624
+2019-06-06 15:10:50,831 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.609  |     0.583
+2019-06-06 15:10:50,831 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8401.144  |       N/A
+2019-06-06 15:10:50,831 - INFO - allennlp.training.tensorboard_writer - f1              |     0.713  |     0.726
+2019-06-06 15:10:50,832 - INFO - allennlp.training.tensorboard_writer - loss            |     2.531  |     2.804
+2019-06-06 15:10:50,832 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |    10.000  |       N/A
+2019-06-06 15:10:50,832 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.515  |     0.497
+2019-06-06 15:10:50,833 - INFO - allennlp.training.tensorboard_writer - em              |     0.569  |     0.616
+2019-06-06 15:10:50,833 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 15:10:50,833 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 15:10:50,834 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 15:10:50,834 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 15:10:50,834 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |    10.000  |       N/A
+2019-06-06 15:10:50,998 - INFO - allennlp.training.trainer - Epoch duration: 0:14:21.327920
+2019-06-06 15:10:50,998 - INFO - allennlp.training.trainer - Estimated training time remaining: 3:52:04
+2019-06-06 15:10:50,999 - INFO - allennlp.training.trainer - Epoch 5/19
+2019-06-06 15:10:50,999 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8401.144
+2019-06-06 15:10:54,267 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 15:10:54,268 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 15:10:54,268 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 15:10:54,268 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 15:10:54,268 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 15:10:54,268 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 15:10:54,269 - INFO - allennlp.training.trainer - Training
+2019-06-06 15:24:32,459 - INFO - allennlp.training.trainer - Validating
+2019-06-06 15:25:01,682 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 15:25:01,685 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.685  |     0.627
+2019-06-06 15:25:01,686 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.632  |     0.587
+2019-06-06 15:25:01,686 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8401.144  |       N/A
+2019-06-06 15:25:01,686 - INFO - allennlp.training.tensorboard_writer - f1              |     0.737  |     0.722
+2019-06-06 15:25:01,687 - INFO - allennlp.training.tensorboard_writer - loss            |     2.319  |     2.817
+2019-06-06 15:25:01,687 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 15:25:01,687 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.538  |     0.502
+2019-06-06 15:25:01,688 - INFO - allennlp.training.tensorboard_writer - em              |     0.594  |     0.619
+2019-06-06 15:25:01,688 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 15:25:01,688 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 15:25:01,689 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 15:25:01,689 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 15:25:01,689 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 15:25:01,851 - INFO - allennlp.training.trainer - Epoch duration: 0:14:10.852330
+2019-06-06 15:25:01,851 - INFO - allennlp.training.trainer - Estimated training time remaining: 3:33:35
+2019-06-06 15:25:01,852 - INFO - allennlp.training.trainer - Epoch 6/19
+2019-06-06 15:25:01,852 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8401.608
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 15:25:05,109 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 15:25:05,110 - INFO - allennlp.training.trainer - Training
+2019-06-06 15:38:38,503 - INFO - allennlp.training.trainer - Validating
+2019-06-06 15:39:07,047 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 15:39:07,049 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.704  |     0.630
+2019-06-06 15:39:07,050 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.652  |     0.582
+2019-06-06 15:39:07,050 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8401.608  |       N/A
+2019-06-06 15:39:07,051 - INFO - allennlp.training.tensorboard_writer - f1              |     0.756  |     0.727
+2019-06-06 15:39:07,051 - INFO - allennlp.training.tensorboard_writer - loss            |     2.151  |     2.828
+2019-06-06 15:39:07,051 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 15:39:07,052 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.558  |     0.499
+2019-06-06 15:39:07,052 - INFO - allennlp.training.tensorboard_writer - em              |     0.615  |     0.624
+2019-06-06 15:39:07,053 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 15:39:07,053 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 15:39:07,053 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 15:39:07,053 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 15:39:07,054 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 15:39:07,229 - INFO - allennlp.training.checkpointer - Best validation performance so far. Copying weights to 'bidaf_mod_final/best.th'.
+2019-06-06 15:39:07,333 - INFO - allennlp.training.trainer - Epoch duration: 0:14:05.481296
+2019-06-06 15:39:07,333 - INFO - allennlp.training.trainer - Estimated training time remaining: 3:16:10
+2019-06-06 15:39:07,333 - INFO - allennlp.training.trainer - Epoch 7/19
+2019-06-06 15:39:07,334 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8401.9
+2019-06-06 15:39:10,537 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 15:39:10,538 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 15:39:10,538 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 15:39:10,538 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 15:39:10,538 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 15:39:10,538 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 15:39:10,539 - INFO - allennlp.training.trainer - Training
+2019-06-06 15:52:48,290 - INFO - allennlp.training.trainer - Validating
+2019-06-06 15:53:17,352 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 15:53:17,354 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.725  |     0.622
+2019-06-06 15:53:17,354 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.677  |     0.585
+2019-06-06 15:53:17,355 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8401.900  |       N/A
+2019-06-06 15:53:17,355 - INFO - allennlp.training.tensorboard_writer - f1              |     0.777  |     0.718
+2019-06-06 15:53:17,356 - INFO - allennlp.training.tensorboard_writer - loss            |     1.986  |     2.901
+2019-06-06 15:53:17,356 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 15:53:17,356 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.582  |     0.496
+2019-06-06 15:53:17,357 - INFO - allennlp.training.tensorboard_writer - em              |     0.636  |     0.614
+2019-06-06 15:53:17,357 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 15:53:17,359 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 15:53:17,359 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 15:53:17,360 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 15:53:17,360 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 15:53:17,533 - INFO - allennlp.training.trainer - Epoch duration: 0:14:10.199675
+2019-06-06 15:53:17,534 - INFO - allennlp.training.trainer - Estimated training time remaining: 2:59:42
+2019-06-06 15:53:17,534 - INFO - allennlp.training.trainer - Epoch 8/19
+2019-06-06 15:53:17,534 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8409.864
+2019-06-06 15:53:20,789 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 15:53:20,790 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 15:53:20,790 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 15:53:20,790 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 15:53:20,790 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 15:53:20,790 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 15:53:20,791 - INFO - allennlp.training.trainer - Training
+2019-06-06 16:06:59,098 - INFO - allennlp.training.trainer - Validating
+2019-06-06 16:07:27,631 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 16:07:27,633 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.742  |     0.628
+2019-06-06 16:07:27,634 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.690  |     0.585
+2019-06-06 16:07:27,635 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8409.864  |       N/A
+2019-06-06 16:07:27,635 - INFO - allennlp.training.tensorboard_writer - f1              |     0.790  |     0.722
+2019-06-06 16:07:27,636 - INFO - allennlp.training.tensorboard_writer - loss            |     1.855  |     3.004
+2019-06-06 16:07:27,636 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 16:07:27,636 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.596  |     0.496
+2019-06-06 16:07:27,637 - INFO - allennlp.training.tensorboard_writer - em              |     0.652  |     0.618
+2019-06-06 16:07:27,637 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 16:07:27,637 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 16:07:27,638 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 16:07:27,638 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 16:07:27,638 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 16:07:27,807 - INFO - allennlp.training.trainer - Epoch duration: 0:14:10.272627
+2019-06-06 16:07:27,807 - INFO - allennlp.training.trainer - Estimated training time remaining: 2:43:44
+2019-06-06 16:07:27,807 - INFO - allennlp.training.trainer - Epoch 9/19
+2019-06-06 16:07:27,807 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8409.864
+2019-06-06 16:07:31,045 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 16:07:31,046 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 16:07:31,046 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 16:07:31,046 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 16:07:31,046 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 16:07:31,046 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 16:07:31,048 - INFO - allennlp.training.trainer - Training
+2019-06-06 16:21:05,294 - INFO - allennlp.training.trainer - Validating
+2019-06-06 16:21:33,597 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 16:21:33,599 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.758  |     0.626
+2019-06-06 16:21:33,600 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.704  |     0.582
+2019-06-06 16:21:33,600 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8409.864  |       N/A
+2019-06-06 16:21:33,600 - INFO - allennlp.training.tensorboard_writer - f1              |     0.804  |     0.721
+2019-06-06 16:21:33,601 - INFO - allennlp.training.tensorboard_writer - loss            |     1.747  |     3.013
+2019-06-06 16:21:33,601 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 16:21:33,601 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.614  |     0.500
+2019-06-06 16:21:33,602 - INFO - allennlp.training.tensorboard_writer - em              |     0.670  |     0.619
+2019-06-06 16:21:33,602 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 16:21:33,602 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 16:21:33,603 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 16:21:33,603 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 16:21:33,603 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 16:21:33,769 - INFO - allennlp.training.trainer - Epoch duration: 0:14:05.961991
+2019-06-06 16:21:33,770 - INFO - allennlp.training.trainer - Estimated training time remaining: 2:28:04
+2019-06-06 16:21:33,772 - INFO - allennlp.training.trainer - Epoch 10/19
+2019-06-06 16:21:33,772 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.12
+2019-06-06 16:21:37,094 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 16:21:37,095 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 16:21:37,095 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 16:21:37,095 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 16:21:37,095 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 16:21:37,095 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 16:21:37,096 - INFO - allennlp.training.trainer - Training
+2019-06-06 16:35:15,513 - INFO - allennlp.training.trainer - Validating
+2019-06-06 16:35:44,385 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 16:35:44,387 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.801  |     0.621
+2019-06-06 16:35:44,388 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.744  |     0.578
+2019-06-06 16:35:44,388 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.120  |       N/A
+2019-06-06 16:35:44,389 - INFO - allennlp.training.tensorboard_writer - f1              |     0.843  |     0.720
+2019-06-06 16:35:44,389 - INFO - allennlp.training.tensorboard_writer - loss            |     1.415  |     3.289
+2019-06-06 16:35:44,389 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 16:35:44,390 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.658  |     0.491
+2019-06-06 16:35:44,390 - INFO - allennlp.training.tensorboard_writer - em              |     0.713  |     0.614
+2019-06-06 16:35:44,390 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 16:35:44,391 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 16:35:44,391 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 16:35:44,391 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 16:35:44,391 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 16:35:44,608 - INFO - allennlp.training.trainer - Epoch duration: 0:14:10.835837
+2019-06-06 16:35:44,608 - INFO - allennlp.training.trainer - Estimated training time remaining: 2:12:45
+2019-06-06 16:35:44,608 - INFO - allennlp.training.trainer - Epoch 11/19
+2019-06-06 16:35:44,609 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.12
+2019-06-06 16:35:48,730 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 16:35:48,731 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 16:35:48,731 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 16:35:48,731 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 16:35:48,731 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 16:35:48,731 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 16:35:48,732 - INFO - allennlp.training.trainer - Training
+2019-06-06 16:49:25,280 - INFO - allennlp.training.trainer - Validating
+2019-06-06 16:49:52,294 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 16:49:52,295 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.823  |     0.622
+2019-06-06 16:49:52,296 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.764  |     0.576
+2019-06-06 16:49:52,296 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.120  |       N/A
+2019-06-06 16:49:52,296 - INFO - allennlp.training.tensorboard_writer - f1              |     0.861  |     0.721
+2019-06-06 16:49:52,297 - INFO - allennlp.training.tensorboard_writer - loss            |     1.273  |     3.475
+2019-06-06 16:49:52,298 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 16:49:52,298 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.683  |     0.491
+2019-06-06 16:49:52,298 - INFO - allennlp.training.tensorboard_writer - em              |     0.739  |     0.618
+2019-06-06 16:49:52,299 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 16:49:52,299 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 16:49:52,299 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 16:49:52,299 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 16:49:52,300 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 16:49:52,450 - INFO - allennlp.training.trainer - Epoch duration: 0:14:07.841595
+2019-06-06 16:49:52,450 - INFO - allennlp.training.trainer - Estimated training time remaining: 1:57:35
+2019-06-06 16:49:52,451 - INFO - allennlp.training.trainer - Epoch 12/19
+2019-06-06 16:49:52,451 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.16
+2019-06-06 16:49:55,965 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 16:49:55,966 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 16:49:55,966 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 16:49:55,966 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 16:49:55,966 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 16:49:55,966 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 16:49:55,967 - INFO - allennlp.training.trainer - Training
+2019-06-06 17:03:28,443 - INFO - allennlp.training.trainer - Validating
+2019-06-06 17:03:57,112 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 17:03:57,114 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.833  |     0.619
+2019-06-06 17:03:57,114 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.774  |     0.570
+2019-06-06 17:03:57,115 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.160  |       N/A
+2019-06-06 17:03:57,115 - INFO - allennlp.training.tensorboard_writer - f1              |     0.869  |     0.716
+2019-06-06 17:03:57,115 - INFO - allennlp.training.tensorboard_writer - loss            |     1.192  |     3.578
+2019-06-06 17:03:57,116 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 17:03:57,116 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.695  |     0.487
+2019-06-06 17:03:57,116 - INFO - allennlp.training.tensorboard_writer - em              |     0.749  |     0.611
+2019-06-06 17:03:57,117 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 17:03:57,117 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 17:03:57,117 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 17:03:57,117 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 17:03:57,118 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 17:03:57,280 - INFO - allennlp.training.trainer - Epoch duration: 0:14:04.829426
+2019-06-06 17:03:57,281 - INFO - allennlp.training.trainer - Estimated training time remaining: 1:42:33
+2019-06-06 17:03:57,281 - INFO - allennlp.training.trainer - Epoch 13/19
+2019-06-06 17:03:57,281 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.16
+2019-06-06 17:04:00,718 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 17:04:00,718 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 17:04:00,719 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 17:04:00,719 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 17:04:00,719 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 17:04:00,719 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 17:04:00,721 - INFO - allennlp.training.trainer - Training
+2019-06-06 17:17:39,526 - INFO - allennlp.training.trainer - Validating
+2019-06-06 17:18:08,287 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 17:18:08,289 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.858  |     0.617
+2019-06-06 17:18:08,289 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.800  |     0.576
+2019-06-06 17:18:08,290 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.160  |       N/A
+2019-06-06 17:18:08,290 - INFO - allennlp.training.tensorboard_writer - f1              |     0.890  |     0.719
+2019-06-06 17:18:08,291 - INFO - allennlp.training.tensorboard_writer - loss            |     1.030  |     3.840
+2019-06-06 17:18:08,291 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 17:18:08,291 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.726  |     0.488
+2019-06-06 17:18:08,292 - INFO - allennlp.training.tensorboard_writer - em              |     0.778  |     0.614
+2019-06-06 17:18:08,292 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 17:18:08,292 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 17:18:08,293 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 17:18:08,293 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 17:18:08,293 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 17:18:08,465 - INFO - allennlp.training.trainer - Epoch duration: 0:14:11.184556
+2019-06-06 17:18:08,466 - INFO - allennlp.training.trainer - Estimated training time remaining: 1:27:42
+2019-06-06 17:18:08,466 - INFO - allennlp.training.trainer - Epoch 14/19
+2019-06-06 17:18:08,466 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.16
+2019-06-06 17:18:11,714 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 17:18:11,715 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 17:18:11,715 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 17:18:11,715 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 17:18:11,715 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 17:18:11,715 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 17:18:11,716 - INFO - allennlp.training.trainer - Training
+2019-06-06 17:31:45,698 - INFO - allennlp.training.trainer - Validating
+2019-06-06 17:32:14,689 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 17:32:14,691 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.867  |     0.616
+2019-06-06 17:32:14,695 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.809  |     0.577
+2019-06-06 17:32:14,695 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.160  |       N/A
+2019-06-06 17:32:14,696 - INFO - allennlp.training.tensorboard_writer - f1              |     0.897  |     0.718
+2019-06-06 17:32:14,696 - INFO - allennlp.training.tensorboard_writer - loss            |     0.959  |     3.930
+2019-06-06 17:32:14,696 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 17:32:14,697 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.738  |     0.491
+2019-06-06 17:32:14,697 - INFO - allennlp.training.tensorboard_writer - em              |     0.789  |     0.615
+2019-06-06 17:32:14,699 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 17:32:14,699 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 17:32:14,699 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 17:32:14,700 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 17:32:14,700 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 17:32:14,883 - INFO - allennlp.training.trainer - Epoch duration: 0:14:06.417403
+2019-06-06 17:32:14,884 - INFO - allennlp.training.trainer - Estimated training time remaining: 1:12:55
+2019-06-06 17:32:14,884 - INFO - allennlp.training.trainer - Epoch 15/19
+2019-06-06 17:32:14,884 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.16
+2019-06-06 17:32:18,150 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 17:32:18,150 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 0
+2019-06-06 17:32:18,151 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 17:32:18,151 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 17:32:18,151 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 17:32:18,151 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 17:32:18,152 - INFO - allennlp.training.trainer - Training
+2019-06-06 17:45:54,036 - INFO - allennlp.training.trainer - Validating
+2019-06-06 17:46:23,766 - INFO - allennlp.training.tensorboard_writer -                     Training |  Validation
+2019-06-06 17:46:23,768 - INFO - allennlp.training.tensorboard_writer - end_acc         |     0.875  |     0.616
+2019-06-06 17:46:23,769 - INFO - allennlp.training.tensorboard_writer - start_acc       |     0.817  |     0.572
+2019-06-06 17:46:23,769 - INFO - allennlp.training.tensorboard_writer - cpu_memory_MB   |  8410.160  |       N/A
+2019-06-06 17:46:23,770 - INFO - allennlp.training.tensorboard_writer - f1              |     0.903  |     0.717
+2019-06-06 17:46:23,770 - INFO - allennlp.training.tensorboard_writer - loss            |     0.909  |     4.031
+2019-06-06 17:46:23,770 - INFO - allennlp.training.tensorboard_writer - gpu_2_memory_MB |  11635.000  |       N/A
+2019-06-06 17:46:23,771 - INFO - allennlp.training.tensorboard_writer - span_acc        |     0.748  |     0.487
+2019-06-06 17:46:23,771 - INFO - allennlp.training.tensorboard_writer - em              |     0.797  |     0.610
+2019-06-06 17:46:23,772 - INFO - allennlp.training.tensorboard_writer - gpu_4_memory_MB |     0.000  |       N/A
+2019-06-06 17:46:23,772 - INFO - allennlp.training.tensorboard_writer - gpu_5_memory_MB |     0.000  |       N/A
+2019-06-06 17:46:23,772 - INFO - allennlp.training.tensorboard_writer - gpu_0_memory_MB |  4975.000  |       N/A
+2019-06-06 17:46:23,772 - INFO - allennlp.training.tensorboard_writer - gpu_3_memory_MB |     0.000  |       N/A
+2019-06-06 17:46:23,773 - INFO - allennlp.training.tensorboard_writer - gpu_1_memory_MB |     0.000  |       N/A
+2019-06-06 17:46:23,943 - INFO - allennlp.training.trainer - Epoch duration: 0:14:09.059199
+2019-06-06 17:46:23,944 - INFO - allennlp.training.trainer - Estimated training time remaining: 0:58:13
+2019-06-06 17:46:23,944 - INFO - allennlp.training.trainer - Epoch 16/19
+2019-06-06 17:46:23,944 - INFO - allennlp.training.trainer - Peak CPU memory usage MB: 8410.16
+2019-06-06 17:46:26,394 - INFO - allennlp.training.trainer - GPU 0 memory usage MB: 4975
+2019-06-06 17:46:26,394 - INFO - allennlp.training.trainer - GPU 1 memory usage MB: 10
+2019-06-06 17:46:26,394 - INFO - allennlp.training.trainer - GPU 2 memory usage MB: 11635
+2019-06-06 17:46:26,394 - INFO - allennlp.training.trainer - GPU 3 memory usage MB: 0
+2019-06-06 17:46:26,394 - INFO - allennlp.training.trainer - GPU 4 memory usage MB: 0
+2019-06-06 17:46:26,395 - INFO - allennlp.training.trainer - GPU 5 memory usage MB: 0
+2019-06-06 17:46:26,397 - INFO - allennlp.training.trainer - Training
+2019-06-06 18:00:12,973 - INFO - allennlp.training.trainer - Validating
+2019-06-06 18:00:42,701 - INFO - allennlp.training.trainer - Ran out of patience.  Stopping training.
+2019-06-06 18:00:42,702 - INFO - allennlp.training.checkpointer - loading best weights
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
+Warning: NaN or Inf found in input tensor.
